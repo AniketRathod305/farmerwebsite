@@ -1,0 +1,26 @@
+.newscard{
+   display: flex;
+   width: 600px;
+   padding: 10px;
+   margin-bottom: 25px;
+   border-radius: 5px;
+}
+
+.newstext{
+    display:flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+.newsimage{
+    width:200px;
+    height: 200px;
+}
+
+.title{
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}

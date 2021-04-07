@@ -1,0 +1,9 @@
+#layout{
+display: flex;
+}
+
+.navlink{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 30px;
+}
