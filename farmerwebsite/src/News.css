@@ -1,0 +1,27 @@
+.overall{
+    border-top: 2px dotted gray;
+    padding-top: 25px;
+    background:linear-gradient(180deg,rgba(191, 231, 138, 0.25),rgba(191,231,138,0.9));
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 7vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    padding :25px;
+
+    
+    
+
+}
+.news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:5px;
+}

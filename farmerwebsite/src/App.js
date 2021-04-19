@@ -1,5 +1,6 @@
 import React from 'react'
-import Routing from './Routing'
+import Routing from "./Routing"
+import Choice from './Choice'
 
 
 function App() {

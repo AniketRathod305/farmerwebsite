@@ -7,6 +7,7 @@ import FarmStore from './FarmStore'
 import News from './News'
 import Video from './Video'
 import axios from 'axios'
+import './Routing.css'
 
 function Routing() {
 
@@ -35,6 +36,7 @@ const newsapi=async()=>{
 
 
     return (
+        <div className="navigation_bar">
         <BrowserRouter>
             <Navbar />
             <Switch>
@@ -51,12 +53,9 @@ const newsapi=async()=>{
                  <News newsArray={newsArray} newsResults={newsResults}/>
                 </Route>
                 <Route path='/videos'>
-                <h1>Informative videos</h1>
-                    <Video link='https://youtu.be/ZFsz-cFXzM8' />
-                    <Video link='https://youtu.be/QT4TWbPLrN8' />
-                    <Video link='https://youtu.be/LBIvBgmP-8g' />
-                    <Video link='https://youtu.be/nv4zp3p3D_I' />
-                    <Video link='https://youtu.be/60YD5jsSlmo' />
+                
+                    <Video  />
+                   
                 </Route>
                 <Route path='/shop'>
                     <FarmStore />
@@ -64,6 +63,7 @@ const newsapi=async()=>{
                 
             </Switch>
         </BrowserRouter>
+        </div>
     )
 }
 

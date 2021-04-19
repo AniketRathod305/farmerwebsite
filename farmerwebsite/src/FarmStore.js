@@ -1,6 +1,7 @@
 import React from 'react'
 import Product from './Product'
 import './Product.css'
+import './FarmStore.css'
 
 
 function FarmStore() {
