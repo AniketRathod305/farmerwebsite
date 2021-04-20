@@ -7,7 +7,11 @@ function NewsCard({newsItem}) {
 
     return (
         <div className='newscard'>
-            <img src={newsItem.urlToImage} className='newsimage' alt='error' ></img>
+            <div className="image_news">
+             <a href={newsItem.url} className="image_link" target='_blank' rel="noreferrer">
+            <img src={newsItem.urlToImage} className='newsimage' alt='' ></img>
+            </a>
+            </div>
             <div className='newstext'>
                 <div>
                     <div className='title'>{newsItem.title}</div>
@@ -16,7 +20,7 @@ function NewsCard({newsItem}) {
                 <div>
                     <div className='description'>{newsItem.description}</div>
                     <span className='readmore'>Read more at
-                    <a href={newsItem.url} target='_blank'>
+                    <a className="news_link" href={newsItem.url} target='_blank' rel="noreferrer">
                     <b>{newsItem.source.name}</b>
                     </a>
                     </span>
